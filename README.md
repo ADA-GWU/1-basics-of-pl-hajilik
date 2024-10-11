@@ -2,7 +2,7 @@
 
 Operations in computers such as storing, reading, transfering occurs with the help of binary numbers, 0s and 1s. For example, a computer wants to store the data (e.g., 0xabc123456) in its memory. The computer read the number either from right-to-left or left-to-right. It looks like either we read english text or arabic text. The order of reading the data is significant. To sum up my explanation, endiannes is the order in which bytes are arranged in computer memory. The importance of understanding endiannes emerge when we work with different hardware architectures or transferring data between systems. 
 
-## What are the ## {types of Endiannes?}
+## What are the ## types of Endiannes?
 In the above explanation, I somehow touched the types of Endiannes, left-to-right / right-to-left. Actually they have special names, Big Endian, and Little Endian.
 
 ## Big-endian: 
