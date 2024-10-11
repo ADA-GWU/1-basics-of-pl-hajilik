@@ -55,3 +55,21 @@ The code I have written in C++ programming languages varies from GPT again on ac
 The prompt I asked from GPT: "Write the code in C++ language, (smae instructions)"
 
 Overall, as expected, C++ outperforms Python in execution time. 
+
+
+# Task #4
+
+The implementation of slicing operation in Python is easy, visualization as well, using numpy and matplotlib. My code asks from user to enter size of the matrix and fill it with ascending number. I sliced the 2D matrix from 1 to size-1. For visualization, I used matplotlib to display both the original and the sliced matrix. Each element is labeled in the plot with its respective value, and the Blues color map is applied for better contrast. The two matrices are displayed side by side for comparison.
+
+The code written by GPT is a bit different. It asks row and column indexes and randomly fill the matrix in the range of 1 to 100. User also enters start and end indexes for slicing. GPT also uses matplotlib library for visualization.
+
+The promt I asked from GPT: "Write 2D matrix slicing in Python and visualize the results."
+
+The implementation of slicing operation in C++ is a bit complicated, at least it was't easy as Python. In my code, I ask from the user to enter the size of the matrix and fill n x n matrix with numbers in ascending order. Unlike Python, I use nested for loops to slice the matrix on the specified border, from 1 till n-1. I print the original and sliced matrices to visualize the results, of course not the same quality as matplotlib enables Python users. At least, I searched for alternative libraries for C++ that allows visualzation, and found this resource: https://stackoverflow.com/questions/4283731/plotting-package-for-c
+
+GPT approach is similar to mine, it also tries to iterate over all elements in the matrix and got slice it. GPT also uses <SFML/Graphics.hpp> library for visualization, but the execution of code is fails in the first attempt. It requires the setup of the library and other processes.
+
+The promt I asked from GPT: "Now implement the code either in C or C++ or Java (that enables visualization)".
+
+Overall, my code is easy to execute and does slicing successfully without acquiring additional setups. However, the code provided by GPT fails in the first attempt of execution.
+
