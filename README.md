@@ -42,3 +42,16 @@ int main() {
 }
 
 The space occupied by empty vector is 24 bytes. For an extra elements in the vector, the size is increased by 4 bytes. For example, it there are three elements, the total size of the vector will be 24 bytes + 12 bytes = 36 bytes.
+
+
+# Task #3
+
+The code I have written in Python programming language varies from GPT version on account of using functions. In the code, I asked from the user to enter number of rows and columns which is followed by iteratively asking from the user to enter the elements of the matrix. However, GPT asks from the user to seperate the elements by space and semicolon between rows. Matrix multiplication phrase also shares the difference only in the context of writing for loop and summation in a single line of the code. Execution time also varies, mine was executed in 24.11 microseconds, while the code of gpt was executed in 25 microseconds. The source I benefited: https://www.geeksforgeeks.org/python-program-multiply-two-matrices/
+
+The prompt I asked from GPT: "Write the python code that takes two matrices and multiply them by calculating also the execution time. Print the result matrix and the execution time. Try to avoid writing comments, I can figure out."
+
+The code I have written in C++ programming languages varies from GPT again on account of using methods. GPT seperates the function that enables it to repeteadly multiplying matrices. The codes also share difference on reading inputs. GPT code beats mine in execution time, 2.07 microseconds by GPT and 5.06 performed by mine 5.08 microseconds. I read: https://www.programiz.com/cpp-programming/examples/matrix-multiplication
+
+The prompt I asked from GPT: "Write the code in C++ language, (smae instructions)"
+
+Overall, as expected, C++ outperforms Python in execution time. 
