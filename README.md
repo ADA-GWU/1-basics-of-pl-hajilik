@@ -18,3 +18,27 @@ For example, the number = 0x10112024 is stored in the memory like this: 24 | 20 
 ## Importance of Endianness: 
 Above, I touched a little bit to its importance as if they haven't handled correctly, misinterpretation of data can occur. For example, a computer that send data in big-endian format may not be understood correctly by a system that reads data in little-endian format. Therefore, the one who works with low-level data structures, file formats, or network communication must account for endiannes to ensure compatibility.
 
+# Task #2
+
+Firstly, I will explain how to calculate the size of the tuple by experimenting with different number of elements in the tuple. Total size of the tuple can be measured with below basic formula. 
+
+Total Size = Base Overhead + (Number of Elements x Size of Each Element)
+
+Base Overhead is 24 bytes. It can also be rechecked by calculating the size of empty tuple. Size of Element varies for different data types of the element. For integers and floats, they occupy 8 bytes in 64-bit system, and 4 bytes in 32-bit system. In the sample, I have three integers in the tuple. The size of the tuple is: 24 + 3*8 = 48.
+
+Calculating the size of the list is similar to tuple. Base Overhead of the list is 40 bytes. It also can be rechecked by calculating empty list size. When there is three elements in the list, the size is 72 bytes: 40 bytes of base overhead, 24 bytes of three pointers, and 8 bytes for future growth.
+
+In C++ language, the std::vector provides a dynamically resizable array, similar to a Python list, however the size of the vector is calculated in a different way. 
+
+#include <iostream>
+#include <vector>
+
+int main() {
+    std::vector<int> vec = {1, 2, 3};  
+
+    std::cout <<sizeof(vec) + vec.capacity() * sizeof(int) << std::endl;
+    
+    return 0;
+}
+
+The space occupied by empty vector is 24 bytes. For an extra elements in the vector, the size is increased by 4 bytes. For example, it there are three elements, the total size of the vector will be 24 bytes + 12 bytes = 36 bytes.
